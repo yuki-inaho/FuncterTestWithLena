@@ -3,15 +3,15 @@
 #include "header.h"
 #include <functional>
 
-typedef std::function<void(std::string, cv::Mat&)> ImageFuncter;
+typedef std::function<void(std::string, cv::Mat&)> Imagefunctor;
 
 class ImageManager{
     public:
         void setLenaPath(std::string _lena_path);
-        void setFuncter(bool _functer_flag);
+        void setfunctor(bool _functor_flag);
         cv::Mat getImage();
 
     private:    
         std::string lena_path;
-        ImageFuncter imf;
+        Imagefunctor imf;
 };
