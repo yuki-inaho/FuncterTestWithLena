@@ -8,7 +8,7 @@ typedef std::function<void(std::string, cv::Mat&)> Imagefunctor;
 class ImageManager{
     public:
         void setLenaPath(std::string _lena_path);
-        void setfunctor(bool _functor_flag);
+        void setFunctor(bool _functor_flag);
         cv::Mat getImage();
 
     private:    

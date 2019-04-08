@@ -6,7 +6,7 @@ ImageManager::setLenaPath(std::string _lena_path){
 }
 
 void 
-ImageManager::setfunctor(bool _functor_switch_flag){
+ImageManager::setFunctor(bool _functor_switch_flag){
     bool functor_switch_flag = _functor_switch_flag;
 
     if(functor_switch_flag){

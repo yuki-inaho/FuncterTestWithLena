@@ -12,12 +12,12 @@ main(int argc, char ** argv){
   if(argc > 1){
     int _switch = std::atoi(argv[1]);
     if(_switch < 4){
-      img_mng.setFuncter(true); //color
+      img_mng.setFunctor(true); //color
     }else{
-      img_mng.setFuncter(false); //grayscale
+      img_mng.setFunctor(false); //grayscale
     }
   }else{
-    img_mng.setFuncter(true);
+    img_mng.setFunctor(true);
   }
   cv::Mat lena = img_mng.getImage();
 
